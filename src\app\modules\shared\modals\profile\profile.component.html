@@ -1,0 +1,8 @@
+<div class="modal-body mb-3 py-4 px-md-4 px-sm-2 border-bottom">
+    <app-table *ngIf="sharedService.tenantTable" [page]="sharedService.tenantTable?.name"
+        [tableFormat]="sharedService.tenantTable" [pageName]="sharedService.tenantTable?.name"></app-table>
+</div>
+
+<div class="modal-footer mb-3 px-4">
+    <button type="button" mat-raised-button color="basic" data-dismiss="modal" class="me-3" (click)="closeDialog()">Close</button>
+</div>
